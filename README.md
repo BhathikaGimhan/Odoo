@@ -1,64 +1,34 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://www.odoo.com" target="_blank"><img src="https://logos-download.com/wp-content/uploads/2016/10/Odoo_logo.png" width="300"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<h1>Laravel-Odoo Integration Project</h1>
+<p>
+This Laravel project is designed to enable interaction with an Odoo website database using Laravel-based websites or web applications. The project leverages Odoo's XML-RPC API to enable read and write data operations to the Odoo database. This project is ideal for developers who are building web applications that need to interact with an Odoo database.
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h2>Features</h2>
+<ul>
+<li>A custom wrapper class for the Odoo XML-RPC API that simplifies the process of making API calls and handling responses.</li>
+<li>A set of Laravel controllers and routes that provide endpoints for retrieving and updating data in the Odoo database.</li>
+<li>A variety of utility classes and functions for working with data retrieved from the Odoo API, including classes for working with Odoo models, records, and fields.</li>
+<li>Ability to retrieve and filter data from the Odoo database.</li>
+<li>Ability to create, update, and delete data in the Odoo database.</li>
+</ul>
+<h2>Getting Started</h2>
+<p>
+To use this Laravel project, you will need to have a working Laravel installation and an Odoo website that you want to connect to. You will also need to configure your Odoo website to enable XML-RPC API access.
+</p>
+<p>
+Once you have configured your Laravel installation and Odoo website, you can start using this project to interact with the Odoo database. Simply include the project in your Laravel application and use the provided controllers, routes, and utility classes to retrieve and modify data in the Odoo database.
+</p>
+<h2>Documentation</h2>
+<p>
+For more information on how to use this Laravel-Odoo integration project, please refer to the project's documentation. The documentation provides detailed instructions on how to configure your Laravel application and Odoo website, as well as how to use the project's controllers, routes, and utility classes to interact with the Odoo database.
+</p>
+<h2>Contributing</h2>
+<p>
+Contributions to this project are welcome and encouraged. To contribute, please fork this project and submit a pull request with your changes. All contributions must adhere to the project's coding standards and pass the project's automated tests.
+</p>
+<h2>License</h2>
+<p>
+This Laravel-Odoo integration project is open-source software licensed under the MIT License. See the LICENSE file for more information.
+</p>
