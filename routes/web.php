@@ -22,7 +22,7 @@ Route::get('/main', function () {
 });
 
 Route::get('/sales', function () {
-    return view('pages.sale');
+    return view('pages.sales.Sales');
 });
 
 Auth::routes();
