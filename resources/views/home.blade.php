@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('back')
+<a href="{{ url("/main") }}"><</a>
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
