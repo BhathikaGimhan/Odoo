@@ -9,12 +9,23 @@
     }
     .cols ul{
         display: inline-block;
-        position: absolute;
+        position: relative;
         right: 5px;
     }
 </style>
 <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 40px">
+
   <div class="container-fluid">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
     <a class="navbar-brand" onclick="goBack()" href="#">
         @if (request()->url() !== url("/main"))
         <i class="fa fa-angle-double-left"></i>
@@ -22,16 +33,7 @@
         <b>Odoo</b>
     </a>
     <div class="cols">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-        </ul>
+
     </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
