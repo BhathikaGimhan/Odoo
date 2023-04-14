@@ -1,3 +1,10 @@
+<style>
+    .offcanvas-backdrop.show{
+        opacity: 1;
+  background-color: rgba(15,23,42,.5);
+  backdrop-filter: blur(8px);
+    }
+</style>
 <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 40px">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><b>Odoo</b></a>
@@ -8,11 +15,11 @@
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header bg-dark">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">User State</h5>
+        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">User State</h3>
         <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body bg-dark">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"  style="color: rgb(153, 153, 153);">
             @guest
                 @if (Route::has('login'))
                     <li class="nav-item">
@@ -43,15 +50,14 @@
                     </figure>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
                     <figure class="text-start">
-                        <figcaption class="footer">Privilage: <blockquote class="blockquote">
+                        <figcaption class="footer" >Privilage: <blockquote class="blockquote">
                             <p>{{ Auth::user()->privilege }}</p>
                         </blockquote></figcaption>
                     </figure>
                 </li>
                 <li class="nav-item bg-transparent">
-                    <a class="nav-link text-end" href="{{ route('logout') }}"
+                    <a class="nav-link text-end text-danger" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
