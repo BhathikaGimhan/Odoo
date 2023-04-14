@@ -13,7 +13,8 @@
     <title>Odoo</title>
     @yield('style')
 </head>
-<body>
+<body style="background-color: rgb(58, 58, 58); color:aliceblue">
+    @include('tools.navBar')
     <div class="content">
         @yield('content')
     </div>
