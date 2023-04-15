@@ -17,14 +17,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/main', function () {
-    return view('pages.homeView');
-});
-
 Route::get('/sales', function () {
     return view('pages.sales.Sales');
 });
 
+
 Auth::routes();
 
+Route::get('/main', [App\Http\Controllers\Controller::class, 'main'])->name('main');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/redirect', [App\Http\Controllers\HomeController::class, 'redirect'])->name('redirect');
