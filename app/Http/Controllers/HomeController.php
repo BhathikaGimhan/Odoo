@@ -26,13 +26,13 @@ class HomeController extends Controller
     public function redirect(){
         $role=Auth::user()->privilege;
         if($role == "SuperAdmin"){
-            return redirect()->route('main');
+            return view('pages.homeView');
         }elseif($role == "admin"){
-            return redirect()->route('main');
+            return view('pages.homeView');
         }elseif($role == "user"){
-            return redirect()->route('main');
+            return view('pages.homeView');
         }else{
-            return redirect()->route('home');
+            return view('pages.homeView');
         }
     }
 }
