@@ -20,7 +20,11 @@
         color: aliceblue;
         margin-right: 10px;
         background-color: rgb(20, 20, 22);
-        padding: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px
     }
     .navbar-brand a{
         color: aliceblue;
