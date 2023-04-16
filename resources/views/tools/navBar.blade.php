@@ -12,16 +12,31 @@
         position: relative;
         right: 5px;
     }
+    .items ul li a{
+        color:rgb(207, 214, 219);
+        margin-right: -10px;
+    }
+    .navbar-brand .back{
+        color: aliceblue;
+        margin-right: 10px;
+        background-color: rgb(20, 20, 22);
+        padding: 20px;
+    }
+    .navbar-brand a{
+        color: aliceblue;
+        text-decoration: none !important;
+    }
 </style>
 <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 40px">
     <div class="container-fluid">
-      <a class="navbar-brand" onclick="goBack()" href="#">
-          @if (request()->url() !== url("/main"))
-          <i class="fa fa-angle-double-left"></i>
+      <div class="navbar-brand">
+          @if (request()->url() !== url("/"))
+          <a onclick="goBack()" class="back" href="#"><i class="fa fa-angle-double-left"></i></a>
           @endif
-          <b>Odoo</b>
-      </a>
-      @yield('navItem')
+          <a href="{{ url('/') }}"><b>Company name</b></a> |
+          @yield('navItem')
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
