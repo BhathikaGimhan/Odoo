@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/sales', function () {
-    return view('pages.sales.Sales');
+    return view('pages.sales.oders.Quotations');
 });
 
 
